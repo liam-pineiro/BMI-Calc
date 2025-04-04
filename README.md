@@ -1,1 +1,1 @@
-# BMI-Calc
+More work with apple iOS and xCode
