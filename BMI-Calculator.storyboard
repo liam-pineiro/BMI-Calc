@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BMI_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uC-8c-b0k">
+                                <rect key="frame" x="151.5" y="187.5" width="111" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your BMI: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOc-o2-myK">
+                                <rect key="frame" x="50" y="568.5" width="90" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="LNF-EZ-oDj"/>
+                                    <constraint firstAttribute="height" constant="25" id="Mr7-Je-NiI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category appears here!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxM-A8-bqG">
+                                <rect key="frame" x="107" y="668.5" width="200" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ino-c9-4jb"/>
+                                    <constraint firstAttribute="height" constant="25" id="lQB-yN-Bsm"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="uQf-VQ-cND"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your weight (kg):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLq-1d-6gO">
+                                <rect key="frame" x="50" y="313.5" width="200" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Myp-It-1Km"/>
+                                    <constraint firstAttribute="height" constant="25" id="OOE-cZ-N4h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your height (m):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBd-XV-fhT">
+                                <rect key="frame" x="50" y="393.5" width="200" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3el-pZ-Hjo"/>
+                                    <constraint firstAttribute="height" constant="25" id="Y4Q-1L-57n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pfY-P4-Pjh">
+                                <rect key="frame" x="260" y="310.5" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="BJS-Qh-5pR"/>
+                                    <constraint firstAttribute="height" constant="30" id="owy-7y-pFB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kZ1-lF-H24">
+                                <rect key="frame" x="260" y="390.5" width="95" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="My2-Vk-ZMd"/>
+                                    <constraint firstAttribute="height" constant="30" id="PI4-eW-PPG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lgB-Ie-wOK">
+                                <rect key="frame" x="150" y="566.5" width="150" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="1uv-4k-ynw"/>
+                                    <constraint firstAttribute="width" constant="150" id="ZIt-03-tTp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ozs-wm-iZo">
+                                <rect key="frame" x="82" y="486.5" width="250" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fcd-uY-G6v"/>
+                                    <constraint firstAttribute="width" constant="250" id="zpL-iw-4nC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Calculate my BMI!"/>
+                                <connections>
+                                    <action selector="calcBMIWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cff-4G-M0e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lgB-Ie-wOK" firstAttribute="top" secondItem="ozs-wm-iZo" secondAttribute="bottom" constant="40" id="4pA-KG-orO"/>
+                            <constraint firstItem="kZ1-lF-H24" firstAttribute="top" secondItem="pfY-P4-Pjh" secondAttribute="bottom" constant="50" id="EXx-RH-Zxh"/>
+                            <constraint firstItem="ozs-wm-iZo" firstAttribute="top" secondItem="sBd-XV-fhT" secondAttribute="bottom" constant="68" id="H3j-ah-Y6g"/>
+                            <constraint firstItem="jOc-o2-myK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="HZH-8h-JkG"/>
+                            <constraint firstItem="lgB-Ie-wOK" firstAttribute="leading" secondItem="jOc-o2-myK" secondAttribute="trailing" constant="10" id="ISx-ef-9cR"/>
+                            <constraint firstItem="sBd-XV-fhT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="JWN-sJ-g43"/>
+                            <constraint firstItem="OLq-1d-6gO" firstAttribute="top" secondItem="1uC-8c-b0k" secondAttribute="bottom" constant="105" id="M56-1T-qV8"/>
+                            <constraint firstItem="jOc-o2-myK" firstAttribute="top" secondItem="sBd-XV-fhT" secondAttribute="bottom" constant="150" id="MHc-Pb-AtN"/>
+                            <constraint firstItem="1uC-8c-b0k" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-250" id="TFC-BH-X9x"/>
+                            <constraint firstItem="sBd-XV-fhT" firstAttribute="top" secondItem="OLq-1d-6gO" secondAttribute="bottom" constant="55" id="X1g-6b-eOp"/>
+                            <constraint firstItem="kZ1-lF-H24" firstAttribute="leading" secondItem="sBd-XV-fhT" secondAttribute="trailing" constant="10" id="X8r-s4-p5R"/>
+                            <constraint firstItem="zxM-A8-bqG" firstAttribute="top" secondItem="jOc-o2-myK" secondAttribute="bottom" constant="75" id="al9-h0-DSY"/>
+                            <constraint firstItem="OLq-1d-6gO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="bxx-Wi-f8u"/>
+                            <constraint firstItem="pfY-P4-Pjh" firstAttribute="leading" secondItem="OLq-1d-6gO" secondAttribute="trailing" constant="10" id="dlV-Qb-O8f"/>
+                            <constraint firstItem="ozs-wm-iZo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f2L-0A-7ZZ"/>
+                            <constraint firstItem="zxM-A8-bqG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fV7-Fc-zNJ"/>
+                            <constraint firstItem="1uC-8c-b0k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ip8-S6-9ll"/>
+                            <constraint firstItem="pfY-P4-Pjh" firstAttribute="top" secondItem="1uC-8c-b0k" secondAttribute="bottom" constant="102" id="zva-WW-fhU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="BMIOutput" destination="lgB-Ie-wOK" id="BIo-qA-iFz"/>
+                        <outlet property="categoryOutput" destination="zxM-A8-bqG" id="thb-SQ-6u4"/>
+                        <outlet property="heightInput" destination="kZ1-lF-H24" id="uy1-vd-Mnz"/>
+                        <outlet property="weightInput" destination="pfY-P4-Pjh" id="nq8-MJ-Sn3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
